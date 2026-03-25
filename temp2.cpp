@@ -1,18 +1,34 @@
 #include <iostream>
 using namespace std;
-
 int main()
 {
-    int arr[5] = {4, 5, 1, 2, 8};
-    int sum = 0, prd = 1;
+    int a, b;
+    char op;
 
-    for (int i = 0; i < 5; i++)
+    cout << "enter the value of a : ";
+    cin >> a;
+
+    cout << "enter the value of b : ";
+    cin >> b;
+
+    cout << "enter the  operator(+,-,*,/) : ";
+    cin >> op;
+
+    if (op == '+')
     {
-        sum += arr[i];
-        prd *= arr[i];
+        cout << "result = " << a + b;
     }
-    cout << "Sum is: " << sum << endl;
-    cout << "Product is: " << prd << endl;
-
+    else if (op == '-')
+    {
+        cout << "result = " << a - b;
+    }
+    else if (op == '*')
+    {
+        cout << "result = " << a * b;
+    }
+    else
+    {
+        cout << "result = " << a / b;
+    }
     return 0;
 }
