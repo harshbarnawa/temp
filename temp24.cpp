@@ -16,7 +16,13 @@ int twoS(vector<int> vec,int target){
 
 int main() {
     vector<int> vec = {3,7,2,1,4};
-    int target = 7;
-    cout << twoS(vec,target);
+    int target = 9;
+    int result = twoS(vec,target);
+    
+    if(result==-1){
+        cout << "Not found";
+    } else {
+        cout <<"Element found on: "<< result;
+    }
     return 0;
 }
