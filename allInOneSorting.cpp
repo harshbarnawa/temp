@@ -41,8 +41,6 @@ void insertionSort(int arr[],int n){
     }
 }
 
-
-
 int main() {
     int n = 6;
     int arr[n] = {4,3,6,1,5,2};
