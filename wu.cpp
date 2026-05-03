@@ -1,17 +1,30 @@
 #include<iostream>
 using namespace std;
 
-void rec(int n){
+void back(int n){
     if(n == 1){
-        cout <<1<<endl;
+        cout <<5<<endl;
         return;
     }
+        cout << n << " ";
+        
+    back(n - 1);
+}
+void forw(int n){
+    if(n == 1){
+        cout <<1 << " ";
+        return;
+    }
+    
+    forw(n - 1);
     cout << n << " ";
-    rec(n - 1);
 }
 
 int main() {
     int n = 5;
-    rec(n);
+
+    back(n);
+    forw(n);
+    
     return 0;
 }
