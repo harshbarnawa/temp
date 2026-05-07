@@ -16,7 +16,7 @@ void heapify(int a[],int n,int i){
 void buildHeap(int a[],int n,int i){
     if(i<0) return;
     heapify(a,n,i);
-    buildHeap(a,n,i-1);+
+    buildHeap(a,n,i-1);
 }
 
 void sortHeap(int a[],int n){
